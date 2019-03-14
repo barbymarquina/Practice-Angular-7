@@ -1,9 +1,30 @@
 .city{
     margin: 10px;
-    font-size: 20px;
-    background-color: rgb(0, 174, 255);
-}
+    padding: 20px;
+    background-color: #191226;
+    height: 200px;
+    width: 200px;
+    font-family: 'Thasadith', sans-serif;
+    color: white
+ }
+ .city:hover{
+    background-color: #EFB704;
+ 
+ }
+ .titulo{
+    font-size: 2em;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    
+    }
+ .temp{
+    font-size: 2em;
+   
+    
+ }
+ .tipo{
+    font-size: 0.8em;
+    
+ }
 
-.titulo{
-
-}

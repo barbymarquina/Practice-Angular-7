@@ -1,5 +1,5 @@
 <div class="city">
-<span class="titulo">Madrid</span>
-<span class="temp">20</span>
-<span class="tipo">℃</span>
+  <span class="titulo">{{ myCity.name | uppercase | encomillar }}</span>
+  <span class="temp">{{ myCity.temperatura.valor }}</span>
+  <span class="tipo">{{ myCity.temperatura.tipo }}</span>
 </div>

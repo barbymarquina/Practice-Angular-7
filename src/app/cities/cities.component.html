@@ -1,1 +1,1 @@
-<app-city></app-city>
+<app-city *ngFor="let city of cities" [myCity]="city" (click)="addCity(myCity.value)"></app-city>

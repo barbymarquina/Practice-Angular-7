@@ -1,0 +1,57 @@
+body{
+    font-family: 'Srisakdi', cursive;
+}
+button{
+    background-color: rgb(51, 133, 153); /* Green */
+    border: none;
+    color: white;
+    margin: 2px;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+nav {
+  float: left; /* Desplazamos el nav hacia la izquierda */
+}
+ 
+nav ul {
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+}
+ 
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+ 
+nav ul li a {
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+ 
+nav ul li:hover {
+  background: #EFB704;
+}

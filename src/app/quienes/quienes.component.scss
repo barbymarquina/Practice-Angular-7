@@ -1,0 +1,17 @@
+h1 {
+  text-align: center;
+  color: #efb704;
+}
+img {
+  margin: 10px auto;
+  display: block;
+}
+.oscurecer {
+  margin: 10px auto;
+  display: block;
+  background-image: linear-gradient( rgba(25, 209, 231, 0.5),
+  rgba(255, 157, 0, 0.541)),
+    url(https://cdn.pixabay.com/photo/2015/03/17/14/05/sparkler-677774_960_720.jpg);
+  height: 480px;
+  width: 720px;
+}

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Ciudad } from './ciudad';
+import { ApiTemperaturaService } from './api-temperatura.service';
 
 @Component({
   selector: 'app-root',
@@ -10,11 +11,14 @@ export class AppComponent {
   title = 'proyecto-ciudades';
   public cities: Array<Ciudad>=[];
 
+constructor(private apiTemp:ApiTemperaturaService){
+
+}
   public addCity(name:string): void{
     this.cities.push({
       name:name,
       temperatura:{
-        valor: 20,
+        valor: this.apiTemp.generarTemperatura(),
         tipo: "°C"
       }
     });
