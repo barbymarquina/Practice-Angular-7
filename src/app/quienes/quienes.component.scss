@@ -3,15 +3,39 @@ h1 {
   color: #efb704;
 }
 img {
-  margin: 10px auto;
+/*   margin: 10px auto; */
   display: block;
 }
+div{
+  display: inline-block;
+}
 .oscurecer {
-  margin: 10px auto;
-  display: block;
+  margin-left: 30px;
   background-image: linear-gradient( rgba(25, 209, 231, 0.5),
   rgba(255, 157, 0, 0.541)),
     url(https://cdn.pixabay.com/photo/2015/03/17/14/05/sparkler-677774_960_720.jpg);
   height: 480px;
-  width: 720px;
+  width: 620px;
+}
+.oscurecer:hover{
+  
+  background-image:
+    url(https://cdn.pixabay.com/photo/2015/03/17/14/05/sparkler-677774_960_720.jpg);
+
+}
+
+.oscurecerDos {
+   margin-left: 20px;
+   margin-right: 30px;
+  background-image: linear-gradient( rgba(25, 209, 231, 0.5),
+  rgba(255, 157, 0, 0.541)),
+    url(https://cdn.pixabay.com/photo/2014/05/03/00/56/summerfield-336672_960_720.jpg);
+  height: 480px;
+  width: 620px;
+}
+
+.oscurecerDos:hover{
+  background-image:
+    url(https://cdn.pixabay.com/photo/2014/05/03/00/56/summerfield-336672_960_720.jpg);
+
 }

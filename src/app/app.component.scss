@@ -33,7 +33,9 @@ button{
 nav {
   float: left; /* Desplazamos el nav hacia la izquierda */
 }
- 
+h1{
+  text-align: center;
+}
 nav ul {
   list-style: none;
   overflow: hidden; /* Limpiamos errores de float */

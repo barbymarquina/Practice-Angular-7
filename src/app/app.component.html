@@ -1,18 +1,25 @@
+<div>
 <nav>
 <ul>
     <li><a routerLink="/page2">Quienes Somos</a></li>
     <li><a routerLink="/page1">Contacto</a></li>
     <li><a routerLink="/producto">Destinos Paradisiacos</a></li>
+    <li><a routerLink="/productos">Destinos</a></li>
   </ul>
 </nav>
+</div>
 
 <hr>
 <router-outlet></router-outlet>
 <hr>
-<link href="https://fonts.googleapis.com/css?family=Srisakdi" rel="stylesheet">
+
 <div>
-  City: <input #myCities/>
+<!--   <h1>Mira la temperatura que hace en tu ciudad de destino</h1> -->
+  City:
+   <input #myCities/>
     <button class="myButton" (click)="addCity(myCities.value)">Add</button>
 </div>
+
+
 {{cities}}
 <app-cities [cities]="cities"></app-cities>

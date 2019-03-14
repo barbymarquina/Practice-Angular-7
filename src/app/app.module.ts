@@ -9,6 +9,7 @@ import { EncomillarPipe } from './encomillar.pipe';
 import { ContactoComponent } from './contacto/contacto.component';
 import { QuienesComponent } from './quienes/quienes.component';
 import { ProductoComponent } from './producto/producto.component';
+import { ProductosComponent } from './productos/productos.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProductoComponent } from './producto/producto.component';
     EncomillarPipe,
     ContactoComponent,
     QuienesComponent,
-    ProductoComponent
+    ProductoComponent,
+    ProductosComponent
   ],
   imports: [
     BrowserModule,
