@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ListaDeProductosService } from '../lista-de-productos.service';
+import { MascotaService } from '../mascota.service';
+
 
 @Component({
   selector: 'app-dog',
@@ -8,8 +9,8 @@ import { ListaDeProductosService } from '../lista-de-productos.service';
 })
 export class DogComponent implements OnInit {
 public imagenPerro: string;
-  constructor(private productoServicio: ListaDeProductosService) { 
-    this.productoServicio.mascotaApi().subscribe({
+  constructor(private mascota: MascotaService) { 
+    this.mascota.mascotaApi().subscribe({
       next: (value) => { 
         this.imagenPerro = value.message;
       }

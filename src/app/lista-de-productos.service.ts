@@ -52,9 +52,9 @@ export class ListaDeProductosService {
     return this.productos;
   }
 
-  public mascotaApi(): Observable<any> {
+/*   public mascotaApi(): Observable<any> {
     return this.http.get('https://dog.ceo/api/breeds/image/random');
-  }
+  } */
 
   public listaProductosApi(): Observable<Producto> {
     return new Observable((observer) => {
