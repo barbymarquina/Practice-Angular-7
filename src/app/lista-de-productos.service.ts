@@ -1,6 +1,7 @@
 import { Injectable } from "@angular/core";
 import { Producto } from "./producto";
 import { Observable } from "rxjs";
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: "root"
@@ -37,7 +38,7 @@ export class ListaDeProductosService {
     precio: 0,
     imagen: "https://i.ytimg.com/vi/76O52P_7Krw/maxresdefault.jpg"
   };
-  constructor() {}
+  constructor(private http: HttpClient) {}
   public obtenerProducto(nombre: string): Producto {
     let producto = this.productos.find(
       producto => producto.nombre.toLowerCase() == nombre.toLowerCase()
@@ -49,6 +50,10 @@ export class ListaDeProductosService {
   }
   public ListaProducto(): Array<Producto> {
     return this.productos;
+  }
+
+  public mascotaApi(): Observable<any> {
+    return this.http.get('https://dog.ceo/api/breeds/image/random');
   }
 
   public listaProductosApi(): Observable<Producto> {

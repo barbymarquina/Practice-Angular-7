@@ -4,12 +4,15 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { QuienesComponent } from './quienes/quienes.component';
 import { ProductoComponent } from './producto/producto.component';
 import { ProductosComponent } from './productos/productos.component';
+import { DogComponent } from './dog/dog.component';
 
 const routes: Routes = [
   {path:'page1', component:ContactoComponent},
   {path:'page2', component:QuienesComponent},
   {path:'producto/:idProducto', component:ProductoComponent},
-  {path:'productos', component:ProductosComponent}
+  {path:'productos', component:ProductosComponent},
+  {path:'mascota', component:DogComponent}
+
 ];
 
 @NgModule({

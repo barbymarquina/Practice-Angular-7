@@ -5,6 +5,7 @@
     <li><a routerLink="/page1">Contacto</a></li>
     <li><a routerLink="/producto">Destinos Paradisiacos</a></li>
     <li><a routerLink="/productos">Destinos</a></li>
+    <li><a routerLink="/mascota">Mascota del dia</a></li>
   </ul>
 </nav>
 </div>
@@ -19,7 +20,5 @@
    <input #myCities/>
     <button class="myButton" (click)="addCity(myCities.value)">Add</button>
 </div>
-
-
 {{cities}}
 <app-cities [cities]="cities"></app-cities>

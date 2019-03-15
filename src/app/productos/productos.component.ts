@@ -9,8 +9,10 @@ import { ListaDeProductosService } from "../lista-de-productos.service";
 })
 export class ProductosComponent implements OnInit {
   public productos: Array<Producto>;
+  
 
   constructor(private productoServicio: ListaDeProductosService) {
+  
     /*  this.productos=this.productoServicio.ListaProducto(); */
     this.productos=[];
     this.productoServicio.listaProductosApi().subscribe({

@@ -10,6 +10,8 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { QuienesComponent } from './quienes/quienes.component';
 import { ProductoComponent } from './producto/producto.component';
 import { ProductosComponent } from './productos/productos.component';
+import { HttpClientModule }    from '@angular/common/http';
+import { DogComponent } from './dog/dog.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { ProductosComponent } from './productos/productos.component';
     ContactoComponent,
     QuienesComponent,
     ProductoComponent,
-    ProductosComponent
+    ProductosComponent,
+    DogComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
